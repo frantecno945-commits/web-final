@@ -1,6 +1,8 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+// ARCHIVO: src/layouts/Layout.astro
+// Nombres en minúscula para que coincidan con los archivos
+import header from '../components/header.astro';
+import footer from '../components/footer.astro';
 ---
 <!doctype html>
 <html lang="es">
@@ -11,14 +13,14 @@ import Footer from '../components/Footer.astro';
     <link rel="stylesheet" href="/styles/global.css">
   </head>
   <body>
-    
-    <Header />
+
+    <header />
 
     <main>
       <slot />
     </main>
 
-    <Footer />
+    <footer />
 
   </body>
 </html>
